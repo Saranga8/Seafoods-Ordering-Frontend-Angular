@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+.wrapper {
+    position: relative;
+}
+
+.doctor-image {
+    position: absolute;
+    width: 512px;
+    height: 520px;
+    left: 0px;
+    top: 30px;
+}
+
+.land-text1 {
+    position: absolute;
+    width: 480px;
+    height: 47px;
+    right: 0px;
+    top: 140px;
+    font-family: Federo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.sub {
+    position: absolute;
+    width: 380px;
+    height: 47px;
+    right: 0px;
+    top: 190px;
+}
+
+.land-text-bold {
+    position: absolute;
+    width: 689px;
+    height: 94px;
+    right: 0px;
+    text-align: right;
+    top: 250px;
+    font-family: Federo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 94px;
+    color: #FF9737;
+}
+
+.main-btn {
+    position: absolute;
+    width: 25%;
+    height: 35px;
+    right: 0;
+    top: 350px;
+}
+
+.make-appointment-btn {
+    background-color: #FF9737;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Federo;
+}
+
+.shopnow {
+    background-color: none;
+    border-width: 2px;
+    border-color: #FF9737;
+    border-style: solid;
+    text-align: center;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: #FF9737;
+    font-size: 20px;
+    font-family: Federo;
+}

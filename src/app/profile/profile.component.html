@@ -1,0 +1,35 @@
+<body>
+    <div class="container">
+        <div class="img-area">
+            <div class="inner-area">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="">
+            </div>
+        </div>
+        <div class="name">{{userData.name}}</div>
+        <div class="about">{{userData.email}}</div>
+        <div class="social-icons" style="text-align: center;">
+            <div> {{userData.street_address}} </div>
+            <div> {{userData.city}} </div>
+            <div> {{userData.district}} </div>
+        </div>
+        <div class="buttons">
+            <button>View Orders</button>
+            <button class="bg-info text-white" (click)="logout()">Logout</button>
+        </div>
+        <div class="social-share">
+            <div class="row">
+                <i class="fa fa-heart"></i>
+                <span> 200 </span>
+            </div>
+            <div class="row">
+                <i class="fa fa-comment"></i>
+                <span>54.2k</span>
+            </div>
+            <div class="row">
+                <i class="fa fa-share"></i>
+                <span>38.5k</span>
+            </div>
+        </div>
+    </div>
+</body>

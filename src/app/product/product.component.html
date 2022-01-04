@@ -1,0 +1,23 @@
+<div class="d-flex row" style="justify-content: center;">
+
+    <div class="col-4 product-card" *ngFor="let item of collection">
+
+        <a [routerLink]="['/details', item.id]"> <img src="{{storageUrl}}{{item.image}}" class="product-image" alt="Product Image">
+        </a>
+
+        <div class="bottom-bar">
+            <div class="product-details-container">
+                <div class="product-name">
+                    {{item.name}}
+                </div>
+
+                <div class="product-price">
+                    Rs. {{item.price}}
+                </div>
+            </div>
+            <div class="cart-icon" style="background-color: #FF9737;padding: 5px; border-radius: 8px;">
+                Add to Cart
+            </div>
+        </div>
+    </div>
+</div>

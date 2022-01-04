@@ -1,0 +1,59 @@
+<div class="overlay">
+    <!-- LOGN IN FORM by Omar Dsoky -->
+    <form>
+        <!--   con = Container  for items in the form-->
+        <div class="con">
+            <!--     Start  header Content  -->
+            <header class="head-form">
+                <h2>Log In</h2>
+                <!--     A welcome message or an explanation of the login form -->
+                <p>login here using your username and password</p>
+            </header>
+            <!--     End  header Content  -->
+            <br>
+            <div class="field-set">
+
+                <!--   user name -->
+                <span class="input-item">
+                    <i class="fa fa-user-circle"></i>
+                </span>
+                <!--   user name Input-->
+                <input [(ngModel)]="loginUserData.email" class="form-input" id="txt-input" type="text" name="email" placeholder="Email" required>
+
+                <br>
+
+                <!--   Password -->
+
+                <span class="input-item">
+                    <i class="fa fa-key"></i>
+                </span>
+                <!--   Password Input-->
+
+                <input class="form-input" type="password" placeholder="Password" id="pwd" name="password" [(ngModel)]="loginUserData.password" required>
+
+                <!--      Show/hide password  -->
+
+
+
+                <br>
+                <!--        buttons -->
+                <!--      button LogIn -->
+                <button (click)="loginUser()" class="log-in" style="background-color: #FF9737;  color: white;"> Log In
+                </button>
+            </div>
+
+            <!--   other buttons -->
+            <div class="other" style="display: flex; justify-content: space-between; ">
+                <!--      Forgot Password button-->
+                <div class="">Login to order seafoods and manage your orders</div>
+                <!--     Sign Up button -->
+
+                <!--      End Other the Division -->
+            </div>
+
+            <!--   End Conrainer  -->
+        </div>
+
+        <!-- End Form -->
+    </form>
+</div>

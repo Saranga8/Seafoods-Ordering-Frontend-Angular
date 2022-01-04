@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-2 col-sm-12 bder mr-4">
+        <div class="side-bar">
+            <ul>
+                <li><a href="#">Add Products</a></li>
+                <li><a href="#">All Products</a></li>
+                <li><a href="'">Order Details</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-9 col-sm-12 center-block ml-4 mt-4">
+        <div class="all-products-section">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Sold</th>
+                        <th scope="col">Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let allProducts of collection">
+                        <th>
+                            <div class="image">
+                                <a [routerLink]="['/details', allProducts.id]">
+                                    <img src="{{storageUrl}}{{allProducts.image}}" alt=""></a>
+
+                            </div>
+                        </th>
+                        <td>{{allProducts.name}}</td>
+                        <td>Rs.{{allProducts.price}}</td>
+                        <td>{{allProducts.quantity}}</td>
+                        <td>{{allProducts.sold}}</td>
+                        <td>{{allProducts.description}}</td>
+                        <td>
+                            <a href="#"><span class="text-primary mr-3">Edit</span></a>
+                            <a href="#"><span class="text-danger">Delete</span></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

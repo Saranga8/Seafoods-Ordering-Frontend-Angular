@@ -1,0 +1,33 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@3.6.1/dist/css/bootstrap.min.css");
+a {
+    text-decoration: none !important;
+}
+
+.my-orders-section {
+    margin-top: 25px;
+}
+
+.my-orders-section .status-lable-p {
+    border-radius: 50px;
+    padding: 3px 6px 3px 6px;
+    background-color: rgb(255, 214, 101);
+    font-size: 12px;
+}
+
+.my-orders-section .status-lable-c {
+    border-radius: 50px;
+    padding: 3px 6px 3px 6px;
+    background-color: rgb(255, 108, 108);
+    font-size: 12px;
+}
+
+.my-orders-section .status-lable-co {
+    border-radius: 50px;
+    padding: 3px 6px 3px 6px;
+    background-color: rgb(176, 240, 170);
+    font-size: 12px;
+}
+
+.my-orders-section .cancel-span-btn {
+    margin-left: 5px;
+}

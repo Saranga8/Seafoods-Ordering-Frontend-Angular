@@ -1,0 +1,59 @@
+<div class="view-cart-section">
+    <div class="basket">
+        <div class="basket-labels">
+            <ul>
+                <li class="item item-heading">Item</li>
+                <li class="price">Price</li>
+                <li class="quantity">Quantity</li>
+                <li class="subtotal">Subtotal</li>
+            </ul>
+        </div>
+        <div class="basket-product" *ngFor="let cartItem of collection">
+            <div class="item">
+                <div class="product-image">
+                    <a [routerLink]="['/details', cartItem.productId]"><img
+                            src="{{storageUrl}}{{cartItem.productImage}}" alt="img" class="product-frame"></a>
+                </div>
+                <div class="product-details">
+                    <h1><strong> {{cartItem.productName}}</strong></h1>
+                    <p><strong>2kg</strong></p>
+                </div>
+            </div>
+            <div class="price">{{cartItem.productPrice}}</div>
+            <div class="quantity">
+                <input type="number" value="4" min="1" class="quantity-field">
+            </div>
+            <div class="subtotal">#104.00</div>
+            <div class="remove">
+                <button class="text-danger">Remove</button>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <div class="summary">
+            <div class="summary-total-items"><span class="total-items"></span> Items in your Cart</div>
+            <div class="summary-subtotal">
+                <div class="subtotal-title">Subtotal</div>
+                <div class="subtotal-value final-value" id="basket-subtotal">1000.00</div>
+                <div class="summary-promo hide">
+                    <div class="promo-title">Promotion</div>
+                    <div class="promo-value final-value" id="basket-promo"></div>
+                </div>
+            </div>
+            <div class="summary-delivery">
+                <select name="delivery-collection" class="summary-delivery-selection">
+                    <option value="0" selected="selected">Select delivery type</option>
+                    <option value="first-class">cash on delivery</option>
+                </select>
+            </div>
+            <div class="summary-total">
+                <div class="total-title">Total</div>
+                <div class="total-value final-value" id="basket-total">1000.00</div>
+            </div>
+            <div class="summary-checkout">
+                <a class="checkout-cta" [routerLink]="['/checkout']"
+                    style="background-color: orange; color: white;">Checkout</a>
+            </div>
+        </div>
+    </aside>
+</div>

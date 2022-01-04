@@ -1,0 +1,44 @@
+<section class="row say-hello" style="background-color: rgb(255, 241, 215)">
+
+    <div class="col-md-6 contact-detail-container">
+        <img class="product-detail-image" src="{{storageUrl}}{{productDetail.image}}" alt=" Product Image"
+            style="border-radius: 10px;">
+    </div>
+
+    <div class="col-md-6 message-form-container pro-detail" style="padding-left: 50px">
+        <table style="font-size: 16px;">
+            <tr>
+                <td style=" padding-top: 50px;">Name</td>
+                <td style="padding-left:16px;  padding-top: 50px;">{{ productDetail.name }}</td>
+            </tr>
+            <tr>
+                <td style=" padding-top: 50px;">Description</td>
+                <td style="padding-left:16px; padding-top: 50px;">{{ productDetail.description }}</td>
+            </tr>
+
+            <tr class="avaialble">
+                <td style="padding-top: 25px;">Available </td>
+                <td style=" padding-top: 25px; padding-left: 20px;">{{ productDetail.available }} Kg</td>
+            </tr>
+            <tr class="sold">
+                <td style="padding-top: 25px;"> Sold </td>
+                <td style="padding-top: 25px; padding-left: 20px;">{{ productDetail.sold }} Kg</td>
+            </tr>
+        </table>
+
+        <div class="price-box"> <span style="font-size: 20px; color: gray;">Price per Kg</span> Rs. {{
+            productDetail.price
+            }} </div>
+
+        <table class="available-and-sold">
+
+        </table>
+
+        <div class="product-button row">
+
+            <button (click)="addTocart()" class="buy-now" style="background-color: orange; color: white;">Add to
+                cart</button>
+
+        </div>
+    </div>
+</section>
